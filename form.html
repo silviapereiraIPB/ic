@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body  style="background-color: <?php echo  $_COOKIE['cor'];  ?>">
+    <h1> Selecione a cor de fundo que seja daqui em diante</h1>
+    <form action="create_cookie.php" method="post">
+        <input type="radio" name="cor" value="blue"> Azul<br>
+        <input type="radio" name="cor" value="red"> Vermelho<br>
+        <input type="radio" name="cor" value="green"> Verde<br>
+        <input type="submit" value="Criar Cookie">
+    </form>
+</body>
